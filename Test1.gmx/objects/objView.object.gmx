@@ -85,7 +85,6 @@ if view_xview + view_wview &gt; room_width view_xview = room_width - view_wview;
 if view_yview &lt; 0 view_yview = 0;
 if view_yview + view_hview &gt; room_height view_yview = room_height - view_hview;
 
-
 </string>
           </argument>
         </arguments>
@@ -120,11 +119,10 @@ else
     mapSurface = surface_create(mapSize, mapSize);
     initiateSurface = 1;
 }
-customFont = font_add_sprite(sprt_secondFont,65,false,1);
-cashTotal = "AAA";
-draw_set_font(sprt_secondFont);
+customFont = font_add_sprite(drawnFont,36,false,1);
+draw_set_font(drawnFont);
 draw_text_colour(20,HEIGHT-87,"$",c_orange,c_yellow,c_yellow,c_orange,1);
-draw_text_colour(40,0,cashTotal,c_orange,c_yellow,c_yellow,c_orange,1);
+draw_text_colour(40,0,global.playerScore,c_orange,c_yellow,c_yellow,c_orange,1);
 
 draw_healthbar(10, HEIGHT-15, 120, HEIGHT-45, 120, c_gray, c_red, c_blue, 0, true, true);
 

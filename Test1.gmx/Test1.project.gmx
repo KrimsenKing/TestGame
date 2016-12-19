@@ -20,16 +20,16 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\script0.gml</script>
+    <script>scripts\script_Calculations.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\YellowVertical</object>
     <object>objects\YellowHorizontal</object>
     <object>objects\BuildingObject</object>
-    <object>objects\object6</object>
     <object>objects\objEnviroment</object>
     <object>objects\objView</object>
     <object>objects\objFontCreate</object>
+    <object>objects\Object_MainVehicle</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rom_Map</room>
